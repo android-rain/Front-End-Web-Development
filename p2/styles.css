@@ -1,0 +1,40 @@
+/* 添加 CSS */
+
+body {
+    margin: 0px;
+}
+
+.card {
+    width: 320px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-family: Georgia, sans-serif;
+    box-shadow: 2px 3px #ddd;
+    background-color: #F5F5F5;
+}
+
+h3, img {
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.description {
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0 1em 0 1em;
+}
+
+.interesting {
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+span {
+    font-weight: bold;
+}
