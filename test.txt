@@ -1,0 +1,2 @@
+test
+现在atom不能push内容到github，新建txt文本用来测试。
