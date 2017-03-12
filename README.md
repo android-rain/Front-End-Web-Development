@@ -4,6 +4,6 @@ A repository of my Udacity Web Development Nanodegree
   - yeah, success ,congratulating, from atom.
 - push project 1 to github
 - changing project 1
-  - tag :'i','b' vs tag :'em', 'strong'
+  - tag :`i`,`b` vs tag :`em`, `strong`
   - complete the Prototype Design
-  - tag : 'del' vs tag : 's'
+  - tag : `del` vs tag : `s`

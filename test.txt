@@ -1,2 +1,4 @@
 test
 现在atom不能push内容到github，新建txt文本用来测试。
+提交成功
+结论：可以单独提交README.md，刚才github或者我的应用抽风了。
