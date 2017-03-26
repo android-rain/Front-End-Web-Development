@@ -1,0 +1,11 @@
+# files won't be tracked #
+##########################
+p3/indextest.html
+p3/___All_Errors.txt
+
+# directories won't be tracked #
+################################
+p3/__node_modules/
+p3/images_src/
+p3/node_modules/
+
