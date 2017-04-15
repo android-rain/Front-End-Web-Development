@@ -135,7 +135,7 @@ a:hover {
 
 @media screen and (max-width: 40em) {
     .js .nav-collapse {
-        clip: rect(0 0 0 0);
+        clip: rect(0, 0, 0, 0);
         max-height: 0;
         position: absolute;
         display: block;
@@ -163,7 +163,7 @@ a:hover {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
-        user-select: none;
+        /*user-select: none;*/
         text-decoration: none;
         /*text-indent: -999px;*/
         /*position: relative;*/
