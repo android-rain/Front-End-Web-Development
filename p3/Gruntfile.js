@@ -74,12 +74,66 @@ module.exports = function(grunt) {
         }]
       },
     },
-  });
+
+    /*jshint check*/
+    jshint: {
+        options: {
+            "curly": true,
+            "eqeqeq": true,
+            "nocomma": true,
+            "undef": false,
+            "unused": true,
+            "globals": {
+              "jQuery": true
+            },
+        },
+        files: ['js/main.js'],
+    },
+    /* csshint*/
+    csslint: {
+        options: {
+            csshintrc: '.csshintrc',
+            },
+        files: ['css/main.css', 'css/responsive-nav.css'],
+    },
+
+    /* Watch the files changed and then run some tasks*/
+    watch: {
+      scripts: {
+          files: ['css/main.css', 'js/main.js','index.html'],
+          tasks: ['jshint'],
+          options: {
+              spawn: false,
+              livereload: true,
+          },
+      },
+    },
+
+    /* Connect to a server*/
+    connect: {
+      server: {
+        options: {
+          port: 8080,
+          hostname: 'localhost',
+          base:['./'],
+          // keepalive: true,
+          livereload: true,
+        },
+      },
+    },
+
   
+  });
+
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['responsive_images']);
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
+  // grunt.registerTask('default', ['jshint', 'csslint', 'watch']);
+  grunt.registerTask('default', ['jshint', 'connect', 'watch']);
 
 };
