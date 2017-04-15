@@ -8,20 +8,21 @@
     <title>My Portfolio</title>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-<!-- responsive navbar refer to https://github.com/viljamis/responsive-nav.js -->
+    <!-- responsive navbar refer to https://github.com/viljamis/responsive-nav.js -->
     <script src="js/responsive-nav.min.js"></script>
     <link rel="stylesheet" href="css/responsive-nav.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- set heading fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <!-- icon style -->
+    <link rel="stylesheet" href="/css/zocial.css">
 </head>
 
 <body>
     <div class="container">
         <header class="row">
-        	<img class="log col-xs-3 col-sm-3" src="images/udacity.svg"  title="优达学城（Udacity）" alt="优达学城官网Logo图片">
+            <img class="log col-xs-3 col-sm-3" src="images/udacity.svg" title="优达学城（Udacity）" alt="优达学城官网Logo图片">
             <h1 class="text-uppercase text-center col-xs-6 col-sm-9">Wedding Makeup</h1>
             <a href="#nav" class="col-xs-3 nav-toggle" aria-hidden="true"></a>
         </header>
@@ -103,7 +104,6 @@
                             </figure>
                         </article>
                     </section>
-                    
                     <section class="col-xs-12 col-sm-6 col-lg-4">
                         <article>
                             <figure>
@@ -132,19 +132,22 @@
                                     </figcaption>
                                 </picture>
                             </figure>
-                        </article>                        
+                        </article>
                     </section>
                 </main>
             </div>
         </div>
+        <hr>
+        <footer class="row">
+            <ul class="icons">
+                <li class="col-xs-6 col-sm-1 col-lg-1"><a href="https://github.com/android-rain/Front-End-Web-Development" class="zocial icon github">View source on GitHub</a></li>
+            </ul>
+        </footer>
     </div>
-    <hr>
-    <footer class="">
-    </footer>
     <script>
-        var navigation = responsiveNav("#nav",{
-              customToggle: ".nav-toggle", // Selector: Specify the ID of a custom toggle
-        });
+    var navigation = responsiveNav("#nav", {
+        customToggle: ".nav-toggle", // Selector: Specify the ID of a custom toggle
+    });
     </script>
 </body>
 
