@@ -33,14 +33,18 @@ div {
 
 header {
 	display: flex;
+	background-color: pink; 
+	height: 10em;
+	align-items: center;
 }
 hr {
 	height: 20px;
 }
 
 h1{
-	background: #FF6766;
-	height: 100px;
+	/*background: #FF6766;*/
+	/*height: 100px;*/
+	font-size: 4em;
 	font-weight: bold;
 	font-family: 'Roboto Condensed', san-serif;
 	letter-spacing: 0.1em;
@@ -170,5 +174,5 @@ a:hover {
 /*navigation description END*/
 .text-set {
 	font-style: italic;
-	color: #ba2be2;
+	/*color: #ba2be2;*/
 }
