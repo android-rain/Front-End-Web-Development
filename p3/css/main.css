@@ -31,6 +31,10 @@ div {
 	box-sizing: border-box;
 }
 
+.log{
+	width: 7em;
+}
+
 header {
 	display: flex;
 	background-color: pink; 
@@ -49,6 +53,10 @@ h1{
 	font-family: 'Roboto Condensed', san-serif;
 	letter-spacing: 0.1em;
 	}
+
+h2{
+	padding-left: 15px;
+}
 
 /*Responsive navbar refer to https://github.com/viljamis/responsive-nav.js/blob/master/demos/advanced-left-navigation/styles.css*/
 /*navigation description START*/
