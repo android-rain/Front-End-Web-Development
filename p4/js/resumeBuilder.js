@@ -38,11 +38,17 @@ bio.display = function () {
     });
 
     /* display contacts*/
-    $("#topContacts").append(formattedMobile + formattedEmail + formattedGithub + formattedTwitter
-        + formattedlocation);
+    $("#topContacts").append(formattedMobile + 
+                             formattedEmail + 
+                             formattedGithub + 
+                             formattedTwitter + 
+                             formattedlocation);
     
-    $("#footerContacts").append(formattedMobile + formattedEmail + formattedGithub + formattedTwitter
-        + formattedlocation);
+    $("#footerContacts").append(formattedMobile + 
+                                formattedEmail + 
+                                formattedGithub + 
+                                formattedTwitter + 
+                                formattedlocation);
 
 };
 bio.display();
@@ -78,7 +84,7 @@ work.display = function(){
 
         });
 }
-}
+};
 work.display();
 
 var projects = {
@@ -160,11 +166,11 @@ education.display = function () {
             majors += ele + " ";
         });
         var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", majors);
-        var formettedSchool = formattedSchoolUrl
-                                + formattedSchoolDegree 
-                                + formattedSchoolDates 
-                                + formattedSchoolLocation
-                                + formattedSchoolMajor;
+        var formettedSchool = formattedSchoolUrl + 
+            formattedSchoolDegree + 
+            formattedSchoolDates  + 
+            formattedSchoolLocation + 
+            formattedSchoolMajor;
         $("#education").append(HTMLschoolStart);
         $(".education-entry:last").append(formettedSchool);
     });
@@ -178,7 +184,7 @@ education.display = function () {
         $("#education").append(HTMLschoolStart);
         $(".education-entry:last").append(formattedOnlineCourse);
     });
-}
+};
 education.display();
 
 
