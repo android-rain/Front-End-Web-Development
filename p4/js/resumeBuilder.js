@@ -38,18 +38,11 @@ bio.display = function () {
     });
 
     /* display contacts*/
-    $("#topContacts").append(formattedMobile + 
+    $("#topContacts, #footerContacts").append(formattedMobile + 
                              formattedEmail + 
                              formattedGithub + 
                              formattedTwitter + 
                              formattedlocation);
-    
-    $("#footerContacts").append(formattedMobile + 
-                                formattedEmail + 
-                                formattedGithub + 
-                                formattedTwitter + 
-                                formattedlocation);
-
 };
 bio.display();
 
