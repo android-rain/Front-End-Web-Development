@@ -92,17 +92,17 @@ var projects = {
         "title": "Joes",
         "dates": "2014.4 - 2014.7",
         "description": "An android APP",
-        "images": "images/197x148.gif"
+        "images": ["images/197x148.gif"]
     }, {
         "title": "Sunshine",
         "dates": "2015.3 - 2015.11",
         "description": "An application for play stock",
-        "images": "images/197x148.gif"
+        "images": ["images/197x148.gif"]
     }, {
         "title": "wechat",
         "dates": "2016 - current",
         "description": "A social community platform",
-        "images": "images/197x148.gif"
+        "images": ["images/197x148.gif"]
     }]
 };
 /* display function of Project*/
@@ -111,10 +111,13 @@ projects.display = function(){
         var formattedTitle = HTMLprojectTitle.replace("%data%", project.title);
         var formattedDates = HTMLprojectDates.replace("%data%", project.dates);
         var formattedDescription = HTMLprojectDescription.replace("%data%", project.description);
-        var formattedImages = HTMLprojectImage.replace("%data%", project.images);
-        var formattedproject = formattedTitle + formattedDates + formattedDescription + formattedImages;
+        var formattedProject = formattedTitle + formattedDates + formattedDescription;
         $("#projects").append(HTMLprojectStart);
-        $(".project-entry:last").append(formattedproject);
+        $(".project-entry:last").append(formattedProject);
+        project.images.forEach(function(image){
+            var formattedImage = HTMLprojectImage.replace("%data%", image);
+            $(".project-entry:last").append(formattedImage);
+        });
     });
 };
 projects.display();
@@ -124,14 +127,14 @@ var education = {
         "name": "YanTai University",
         "location": "YanTai ShanDong",
         "degree": "Undergraduate Degree",
-        "majors": ['CE']
+        "majors": ['CE'],
         "dates": "2008.9 - 2012.6",
         "url": "http://www.ytu.edu.cn/",
     }, {
         "name": "ZheJiang University",
         "location": "HangZhou ZheJiang",
         "degree": "None Degree",
-        "majors": ['CS']
+        "majors": ['CS'],
         "dates": "2011.10",
         "url": "http://www.zju.edu.cn/",
     }],
@@ -161,18 +164,19 @@ education.display = function () {
         var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", school.degree);
         var formattedSchoolDates = HTMLschoolDates.replace("%data%", school.dates);
         var formattedSchoolUrl = formattedSchoolName.replace("#", school.url);
-        var majors = "";
-        school.major.forEach(function(ele){
-            majors += ele + " ";
-        });
-        var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", majors);
+        
         var formettedSchool = formattedSchoolUrl + 
             formattedSchoolDegree + 
             formattedSchoolDates  + 
-            formattedSchoolLocation + 
-            formattedSchoolMajor;
+            formattedSchoolLocation;
+            
         $("#education").append(HTMLschoolStart);
         $(".education-entry:last").append(formettedSchool);
+        school.majors.forEach(function(major){
+            var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", major);
+            $(".education-entry:last").append(formattedSchoolMajor);
+
+        });
     });
     $("#education").append(HTMLonlineClasses);
     education.onlineCourses.forEach(function(course){
