@@ -44,7 +44,6 @@ bio.display = function () {
                              formattedTwitter + 
                              formattedlocation);
 };
-bio.display();
 
 var work = {
     "jobs": [{
@@ -78,7 +77,6 @@ work.display = function(){
         });
 }
 };
-work.display();
 
 var projects = {
     "projects": [{
@@ -113,7 +111,6 @@ projects.display = function(){
         });
     });
 };
-projects.display();
 
 var education = {
     "schools": [{
@@ -182,11 +179,14 @@ education.display = function () {
         $(".education-entry:last").append(formattedOnlineCourse);
     });
 };
+
+
+
+
+bio.display();
+work.display();
+projects.display();
 education.display();
-
-
-
-
 // $("#main").append(internationalizeButton);
 // function inName(string){
 // 	var name = string.split(" ");
