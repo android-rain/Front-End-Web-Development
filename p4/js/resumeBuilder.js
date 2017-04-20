@@ -1,8 +1,6 @@
 var bio = {
     "name": "Yi Yun",
     "role": "Web Developer",
-    "welcomeMessage": "STILL HUNGRY STILL FOOLISH",
-    "biopic": "images/fry.jpg",
     "contacts": {
         "mobile": "0571-88916588",
         "email": "cutejs@gmail.com",
@@ -10,7 +8,9 @@ var bio = {
         "twitter": "cutejs@gmail.com",
         "location": "XiHu HangZhou"
     },
-    "skills": ["Play with Python", "Saving the Human", "Cook Eat Delicious", "Precise Shot"]
+    "welcomeMessage": "STILL HUNGRY STILL FOOLISH",
+    "skills": ["Play with Python", "Saving the Human", "Cook Eat Delicious", "Precise Shot"],
+    "biopic": "images/fry.jpg",
 };
 bio.display = function () {
     
@@ -124,16 +124,16 @@ var education = {
         "name": "YanTai University",
         "location": "YanTai ShanDong",
         "degree": "Undergraduate Degree",
+        "majors": ['CE']
         "dates": "2008.9 - 2012.6",
         "url": "http://www.ytu.edu.cn/",
-        "major": ['CE']
     }, {
         "name": "ZheJiang University",
         "location": "HangZhou ZheJiang",
         "degree": "None Degree",
+        "majors": ['CS']
         "dates": "2011.10",
         "url": "http://www.zju.edu.cn/",
-        "major": ['CS']
     }],
     "onlineCourses": [{
         "title": "Intro to Java Programming",
